@@ -1,5 +1,5 @@
 const express = require('express');
-const Train = require('../models/Train');
+const Train = require('../Train');
 const router = express.Router();
 require('dotenv').config();
 
