@@ -74,20 +74,21 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
-      <header className="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 shadow-2xl">
-        <div className="container mx-auto px-6 py-8">
+    <div className="flex flex-col min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
+
+      <header className=" h-[20vh] bg-gradient-to-r  from-emerald-600 via-teal-600 to-cyan-600 shadow-2xl">
+        <div className="container  mx-auto px-6 py-4">
           <div className="text-center">
             {/* <div className="inline-block mb-6">
               <div className="text-7xl mb-4 animate-bounce">🚂</div>
             </div> */}
-            <h1 className="text-4xl font-bold text-white mb-4 tracking-tight">
+            <h1 className="text-3xl font-bold text-white mb-1 tracking-tight">
               Train Explorer
             </h1>
-            <p className="text-lg text-emerald-100 font-medium max-w-2xl mx-auto">
+            <p className="text-md text-emerald-100 font-medium max-w-2xl mx-auto">
               Discover seamless train journeys with intelligent route planning and real-time pricing
             </p>
-            <div className="mt-6 flex justify-center space-x-4">
+            <div className="mt-2 flex justify-center space-x-4">
               <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
                 <span className="text-white text-sm font-medium">🚉 50+ Stations</span>
               </div>
@@ -102,7 +103,8 @@ function App() {
         </div>
       </header>
 
-      <div className="container min-h-[55vh] mx-auto px-6 py-12">
+      <div className="container flex-grow mx-auto px-6 py-12">
+
         <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/50 p-8 mb-12">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
             <div className="space-y-2">
@@ -203,9 +205,9 @@ function App() {
                     <th className="px-6 py-4 text-left text-xs font-semibold text-emerald-700 uppercase tracking-wider bg-emerald-50/50">
                       🚂 Train Name
                     </th>
-                    <th className="px-6 py-4 text-left text-xs font-semibold text-emerald-700 uppercase tracking-wider bg-emerald-50/50">
+                    {/* <th className="px-6 py-4 text-left text-xs font-semibold text-emerald-700 uppercase tracking-wider bg-emerald-50/50">
                       📍 Type
-                    </th>
+                    </th> */}
                     <th className="px-6 py-4 text-left text-xs font-semibold text-emerald-700 uppercase tracking-wider bg-emerald-50/50">
                       🕐 Departure
                     </th>
@@ -228,7 +230,7 @@ function App() {
                           {train.trainName}
                         </div>
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap">
+                      {/* <td className="px-6 py-4 whitespace-nowrap">
                         <span className={`inline-flex px-3 py-1 text-xs font-bold rounded-full ${
                           train.type === 'Direct' 
                             ? 'bg-gradient-to-r from-emerald-400 to-teal-500 text-white' 
@@ -236,7 +238,7 @@ function App() {
                         }`}>
                           {train.type === 'Direct' ? '🚀 Direct' : '🔄 Connecting'}
                         </span>
-                      </td>
+                      </td> */}
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-emerald-700 font-medium">
                         {train.departureTime}
                       </td>
@@ -270,8 +272,8 @@ function App() {
         )}
       </div>
 
-      <footer className=" h-[100px] bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-700 text-white py-8 mt-10">
-        <div className="container mx-auto px-6">
+      <footer className="mb-0 bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-700 text-white mt-10">
+        <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-1 md:mb-0">
               <span className="text-2xl">🚂</span>
