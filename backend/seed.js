@@ -29,7 +29,7 @@ function generateTrainName() {
 
 function generateTime() {
   const hours = Math.floor(Math.random() * 24);
-  const minutes = Math.floor(Math.random() * 4) * 15; // 0, 15, 30, 45
+  const minutes = Math.floor(Math.random() * 4) * 15; 
   return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
 }
 
@@ -38,7 +38,7 @@ function generateDistance() {
 }
 
 function generateStops() {
-  const numStops = Math.floor(Math.random() * 4) + 5; // 5-8 stops
+  const numStops = Math.floor(Math.random() * 4) + 5; 
   const selectedStations = [];
   
   while (selectedStations.length < numStops) {
